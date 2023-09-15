@@ -1,9 +1,9 @@
 import {  TbCurrencyTaka } from 'react-icons/tb';
 import PropTypes from 'prop-types';
 
-const Card = ({data}) => {
+const Card = ({data, cartItem}) => {
     const {title, description, price, duration, thumbnail} = data;
-    console.log(data);
+    // console.log(data);
     return (
         <div>
             <div className="card bg-base-100 p-4">
@@ -16,7 +16,7 @@ const Card = ({data}) => {
                         <p className='text-end'>{duration}hr</p>
                     </div>
                     <div className="card-actions justify-center">
-                        <button className="btn btn-primary w-full">Buy Now</button>
+                        <button onClick={() => cartItem(data)} className="btn bg-blue-600 w-full text-white font-semibold hover:bg-black transition-all">Select</button>
                     </div>
                 </div>
             </div>
@@ -25,6 +25,6 @@ const Card = ({data}) => {
 };
 Card.propTypes = {
     data: PropTypes.any,
-
+    cartItem: PropTypes.func,
 }
 export default Card;

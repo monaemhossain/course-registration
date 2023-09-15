@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import Cards from "./Cards";
+import Cards from "./Card/Cards";
+import Cart from "./Cart/Cart";
 
 const Data = () => {
     const [courseData, setCourseData] = useState([]);
@@ -8,14 +9,22 @@ const Data = () => {
         fetch('/data.json')
             .then(res => res.json())
             .then(data => setCourseData(data))
-    }, [])
+    }, []);
+    const [cartItems, setCartItems] = useState([]);
+    const handleAddToCart = (item) => {
+        const newCartItems = [...cartItems, item];
+        setCartItems(newCartItems);
+    }
+    // console.log(courseData);
     return (
-        <div className="max-w-screen-xl mx-auto">
-            <div className="grid grid-cols-5">
-                <div className="col-span-4">
-                    <Cards data={courseData}></Cards>
+        <div className="max-w-screen-2xl mx-auto">
+            <div className="grid grid-cols-4 gap-6">
+                <div className="col-span-3">
+                    <Cards data={courseData}  cartItem={handleAddToCart}></Cards>
                 </div>
-                <div className="col-span-1"></div>
+                <div className="col-span-1">
+                    <Cart cartItems={cartItems}></Cart>
+                </div>
             </div>
         </div>
     );

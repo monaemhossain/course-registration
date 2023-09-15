@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='font-inter'>
         <Header></Header>
         <Data></Data>
       </div>

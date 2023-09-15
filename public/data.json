@@ -10,7 +10,7 @@
   {
     "id": 2,
     "title": "Database Management Systems",
-    "description": "Learn database design, querying, and optimization. A must-have for modern applications development and management.",
+    "description": "Learn database design, querying, and optimization. A must-have for modern applications development.",
     "price": 8500,
     "duration": 9,
     "thumbnail": "https://i.postimg.cc/4nCvLdpc/Rectangle-2-1.png"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "title": "Operating Systems Concepts",
-    "description": "Explore process management, memory allocation, and file systems. Gain core knowledge for IT professionals.",
+    "description": "Explore process management, memory allocation, and file systems. Core knowledge for IT professionals.",
     "price": 6800,
     "duration": 4,
     "thumbnail": "https://i.postimg.cc/hGMrDKqF/Rectangle-2-2.png"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "Computer Networks Fundamentals",
-    "description": "Understand protocols, IP addressing, and network security. Build a strong foundation in networking concepts.",
+    "description": "Understand protocols, IP addressing, and network security. Build a foundation in networking concepts.",
     "price": 9350,
     "duration": 10,
     "thumbnail": "https://i.postimg.cc/Z5S20YX0/Rectangle-2-3.png"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "title": "Software Engineering Practices",
-    "description": "Master best practices, version control, and project management. Elevate your programming skills and development process.",
+    "description": "Master best practices, version control, and project management. Elevate your programming skills.",
     "price": 10200,
     "duration": 8,
     "thumbnail": "https://i.postimg.cc/63mfZz3Y/Rectangle-2-4.png"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "title": "Data Structures in C++",
-    "description": "Explore arrays, linked lists, stacks, queues, and trees. Build a strong foundation in fundamental data structures.",
+    "description": "Explore arrays, linked lists, stacks, queues, and trees. Build a foundation in data structures.",
     "price": 10950,
     "duration": 3,
     "thumbnail": "https://i.postimg.cc/MHB3KgDy/Rectangle-2-5.png"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "title": "Cybersecurity Fundamentals",
-    "description": "Learn network security, cryptography, and secure coding practices. Effectively protect digital assets and online privacy.",
+    "description": "Learn network security, cryptography, and secure coding practices. Protect digital assets effectively.",
     "price": 8500,
     "duration": 7,
     "thumbnail": "https://i.postimg.cc/sfMtNNpf/Rectangle-2-6.png"
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "title": "Machine Learning Foundations",
-    "description": "Gain a solid understanding of machine learning algorithms and applications. Dive into the exciting world of AI and data science.",
+    "description": "Gain a solid understanding of machine learning algorithms and their applications. Dive into the world of AI.",
     "price": 11900,
     "duration": 10,
     "thumbnail": "https://i.postimg.cc/rphPh1st/Rectangle-3.png"
@@ -66,7 +66,7 @@
   {
     "id": 9,
     "title": "Web Development Basics",
-    "description": "Start your web development journey. Learn HTML, CSS, and JavaScript for creating interactive and dynamic web pages.",
+    "description": "Start your web development journey. Learn HTML, CSS, and JavaScript for interactive web pages.",
     "price": 6800,
     "duration": 5,
     "thumbnail": "https://i.postimg.cc/dVjXCPK6/Rectangle-3-1.png"

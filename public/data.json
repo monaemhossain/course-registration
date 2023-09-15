@@ -1,0 +1,59 @@
+[
+    {
+      "title": "Introduction to Algorithms",
+      "description": "Learn the fundamentals of designing and analyzing algorithms in this comprehensive course.",
+      "price": 7650,
+      "duration": "3 hours",
+      "thumbnail": "https://example.com/algorithms_thumbnail.jpg"
+    },
+    {
+      "title": "Database Management Systems",
+      "description": "Explore principles of database design and management for efficient data handling.",
+      "price": 8500,
+      "duration": "5 hours",
+      "thumbnail": "https://example.com/database_thumbnail.jpg"
+    },
+    {
+      "title": "Operating Systems Concepts",
+      "description": "Gain insights into process management, memory allocation, and file systems in this course.",
+      "price": 6800,
+      "duration": "9 hours",
+      "thumbnail": "https://example.com/os_concepts_thumbnail.jpg"
+    },
+    {
+      "title": "Computer Networks Fundamentals",
+      "description": "Understand protocols, IP addressing, and network security in this introductory networking course.",
+      "price": 9350,
+      "duration": "10 hours",
+      "thumbnail": "https://example.com/networking_thumbnail.jpg"
+    },
+    {
+      "title": "Software Engineering Practices",
+      "description": "Master software development best practices, version control, and project management techniques.",
+      "price": 10200,
+      "duration": "2 hours",
+      "thumbnail": "https://example.com/software_engineering_thumbnail.jpg"
+    },
+    {
+      "title": "Data Structures in C++",
+      "description": "Explore essential data structures like arrays, linked lists, stacks, queues, and trees using C++.",
+      "price": 10950,
+      "duration": "8 hours",
+      "thumbnail": "https://example.com/data_structures_cplusplus_thumbnail.jpg"
+    },
+    {
+      "title": "Cybersecurity Fundamentals",
+      "description": "Learn network security, cryptography, and secure coding practices in this cybersecurity course.",
+      "price": 8500,
+      "duration": "4 hours",
+      "thumbnail": "https://example.com/cybersecurity_thumbnail.jpg"
+    },
+    {
+      "title": "Machine Learning Foundations",
+      "description": "Gain a foundational understanding of machine learning algorithms and their applications.",
+      "price": 11900,
+      "duration": "10 hours",
+      "thumbnail": "https://example.com/machine_learning_foundations_thumbnail.jpg"
+    }
+  ]
+  

@@ -8,7 +8,6 @@ export default {
     extend: {
       fontFamily: {
         'inter': ["'Inter'", 'sans-serif'],
-        fuggles: ["'Fuggles'", 'cursive']
       },
     },
   },

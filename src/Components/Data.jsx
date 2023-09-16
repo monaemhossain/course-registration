@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Cards from "./Card/Cards";
 import Cart from "./Cart/Cart";
 
@@ -10,20 +9,47 @@ const Data = () => {
             .then(res => res.json())
             .then(data => setCourseData(data))
     }, []);
+
+
     const [cartItems, setCartItems] = useState([]);
-    const handleAddToCart = (item) => {
-        const newCartItems = [...cartItems, item];
-        setCartItems(newCartItems);
+    const [creditHour, setCreditHour] = useState(0);
+    const [remainCredit, setRemainCredit] = useState(20)
+
+    const handleAddToCart = (course) => {
+        const addedItem = cartItems.find(item => item.id == course.id);
+        let creditHour = course.duration;
+
+        if (addedItem) {
+            alert("already added");
+            return;
+        } else {
+
+            cartItems.forEach(duration => {
+                creditHour += duration.duration;
+            });
+
+            if (creditHour > 20) {
+                return alert('credit ses');
+            } else {
+                setCreditHour(creditHour);
+                const remainCreditHour = 20 - creditHour;
+                setRemainCredit(remainCreditHour);
+            }
+
+            const newCartItems = [...cartItems, course];
+            setCartItems(newCartItems);
+        }
+
     }
-    // console.log(courseData);
+
     return (
         <div className="max-w-screen-2xl mx-auto">
             <div className="grid grid-cols-4 gap-6">
                 <div className="col-span-3">
-                    <Cards data={courseData}  cartItem={handleAddToCart}></Cards>
+                    <Cards data={courseData} cartItem={handleAddToCart}></Cards>
                 </div>
                 <div className="col-span-1">
-                    <Cart cartItems={cartItems}></Cart>
+                    <Cart cartItems={cartItems} creditHour={creditHour} remainCreditHour={remainCredit}></Cart>
                 </div>
             </div>
         </div>

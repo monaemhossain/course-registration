@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
-const liStyle = {
-    content: `counter(item) ' '`
-}
-const Item = ({item}) => {
+
+const Item = ({item }) => {
     const {title} = item;
+    // console.log(duration);
     return (
-        <li style={liStyle}>{title}</li>  
+        <li>{title}</li>  
     );
 };
 

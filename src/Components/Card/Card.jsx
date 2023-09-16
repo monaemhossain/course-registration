@@ -12,7 +12,7 @@ const Card = ({ data, cartItem }) => {
                 <div className="card-body p-0  text-[#1C1B1B99]">
                     <h2 className="card-title text-lg text-black">{title}</h2>
                     <p>{description}</p>
-                    <div className="flex items-center justify-between font-medium">
+                    <div className="flex items-center justify-between font-medium py-2">
                         <p className='flex items-center'>
                             <span>Price: {price}</span>
                             <span className='text-xl'><TbCurrencyTaka /></span>

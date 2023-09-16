@@ -18,18 +18,21 @@ const Data = () => {
     const [cartItems, setCartItems] = useState([]);
     const [creditHour, setCreditHour] = useState(0);
     const [remainCredit, setRemainCredit] = useState(20)
+    const [totalPrice, setTotalPrice] = useState(0)
 
     const handleAddToCart = (course) => {
         
         const addedItem = cartItems.find(item => item.id == course.id);
         let creditHour = course.duration;
-
+        let totalPrice = course.price;
+        
         if (addedItem) {
             return toast.warn('Already added to the cart');
         } else {
 
             cartItems.forEach(duration => {
                 creditHour += duration.duration;
+                totalPrice += duration.price;
             });
 
             if (creditHour > 20) {
@@ -38,6 +41,7 @@ const Data = () => {
                 setCreditHour(creditHour);
                 const remainCreditHour = 20 - creditHour;
                 setRemainCredit(remainCreditHour);
+                setTotalPrice(totalPrice)
             }
 
             const newCartItems = [...cartItems, course];
@@ -53,7 +57,7 @@ const Data = () => {
                     <Cards data={courseData} cartItem={handleAddToCart}></Cards>
                 </div>
                 <div className="col-span-1">
-                    <Cart cartItems={cartItems} creditHour={creditHour} remainCreditHour={remainCredit}></Cart>
+                    <Cart cartItems={cartItems} creditHour={creditHour} remainCreditHour={remainCredit} totalPrice={totalPrice}></Cart>
                 </div>
             </div>
             <ToastContainer position="bottom-right" autoClose={3000} newestOnTop/>

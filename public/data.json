@@ -5,7 +5,7 @@
     "description": "Master algorithm design and analysis. Gain essential knowledge for programmers and computer scientists.",
     "price": 7650,
     "duration": 3,
-    "thumbnail": "https://i.postimg.cc/0QWcfPtG/Rectangle-2.png"
+    "thumbnail": "https://i.postimg.cc/Z5S20YX0/Rectangle-2-3.png"
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
     "description": "Understand protocols, IP addressing, and network security. Build a foundation in networking concepts.",
     "price": 9350,
     "duration": 10,
-    "thumbnail": "https://i.postimg.cc/Z5S20YX0/Rectangle-2-3.png"
+    "thumbnail": "https://i.postimg.cc/sfMtNNpf/Rectangle-2-6.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "description": "Master best practices, version control, and project management. Elevate your programming skills.",
     "price": 10200,
     "duration": 8,
-    "thumbnail": "https://i.postimg.cc/63mfZz3Y/Rectangle-2-4.png"
+    "thumbnail": "https://i.postimg.cc/MHB3KgDy/Rectangle-2-5.png"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "description": "Explore arrays, linked lists, stacks, queues, and trees. Build a foundation in data structures.",
     "price": 10950,
     "duration": 3,
-    "thumbnail": "https://i.postimg.cc/MHB3KgDy/Rectangle-2-5.png"
+    "thumbnail": "https://i.postimg.cc/63mfZz3Y/Rectangle-2-4.png"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "description": "Learn network security, cryptography, and secure coding practices. Protect digital assets effectively.",
     "price": 8500,
     "duration": 7,
-    "thumbnail": "https://i.postimg.cc/sfMtNNpf/Rectangle-2-6.png"
+    "thumbnail": "https://i.postimg.cc/0QWcfPtG/Rectangle-2.png"
   },
   {
     "id": 8,

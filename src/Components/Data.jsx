@@ -36,7 +36,7 @@ const Data = () => {
             });
 
             if (creditHour > 20) {
-                return toast.error('Credit limit exited');
+                return toast.error('20 Hours Credit limit exited');
             } else {
                 setCreditHour(creditHour);
                 const remainCreditHour = 20 - creditHour;

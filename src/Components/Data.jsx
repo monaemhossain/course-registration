@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
+
 import Cards from "./Card/Cards";
 import Cart from "./Cart/Cart";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Data = () => {
     const [courseData, setCourseData] = useState([]);
@@ -16,12 +20,12 @@ const Data = () => {
     const [remainCredit, setRemainCredit] = useState(20)
 
     const handleAddToCart = (course) => {
+        
         const addedItem = cartItems.find(item => item.id == course.id);
         let creditHour = course.duration;
 
         if (addedItem) {
-            alert("already added");
-            return;
+            return toast.warn('Already added to the cart');
         } else {
 
             cartItems.forEach(duration => {
@@ -29,7 +33,7 @@ const Data = () => {
             });
 
             if (creditHour > 20) {
-                return alert('credit ses');
+                return toast.error('Credit limit exited');
             } else {
                 setCreditHour(creditHour);
                 const remainCreditHour = 20 - creditHour;
@@ -52,6 +56,7 @@ const Data = () => {
                     <Cart cartItems={cartItems} creditHour={creditHour} remainCreditHour={remainCredit}></Cart>
                 </div>
             </div>
+            <ToastContainer position="bottom-right" autoClose={3000} newestOnTop/>
         </div>
     );
 };
